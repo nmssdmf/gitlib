@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TagLayout">
+        <!-- 显示行数 -->
+        <attr name="line_count" format="integer"/>
+        <!-- 子view之间的横向空间 -->
+        <attr name="horizontal_space" format="dimension"/>
+        <!-- 子view之间的纵向空间 -->
+        <attr name="vertical_space" format="dimension"/>
+        <!-- 一行显示几个子view(规则布局) -->
+        <attr name="horizontal_count" format="integer"/>
+    </declare-styleable>
+</resources>
