@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <com.nmssdmf.gitlib.TagLayout
+            <com.nmssdmf.gitlib.view.TagLayout
                 android:id="@+id/tl_rule"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -24,7 +24,7 @@
                 app:horizontal_count="8"/>
 
 
-            <com.nmssdmf.gitlib.TagLayout
+            <com.nmssdmf.gitlib.view.TagLayout
                 android:id="@+id/tl_irregular"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

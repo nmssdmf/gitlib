@@ -1,1 +1,1 @@
-include ':gitlib', ':gittest'
+include ':gitlib', ':gittest', ':demo'

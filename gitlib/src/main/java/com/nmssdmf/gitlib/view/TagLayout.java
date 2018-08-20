@@ -1,4 +1,4 @@
-package com.nmssdmf.gitlib;
+package com.nmssdmf.gitlib.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -9,10 +9,13 @@ import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import com.nmssdmf.gitlib.R;
+
 import java.util.Hashtable;
 
 /**
  * Created by ${nmssdmf} on 2018/8/6 0006.
+ * 标签group
  */
 
 public class TagLayout extends LinearLayout {
@@ -178,5 +181,37 @@ public class TagLayout extends LinearLayout {
         rectF.top = top;
         rectF.right = right;
         rectF.bottom = bottom;
+    }
+
+    public int getLineCount() {
+        return lineCount;
+    }
+
+    public void setLineCount(int lineCount) {
+        this.lineCount = lineCount;
+    }
+
+    public int getHorizontalSpace() {
+        return horizontalSpace;
+    }
+
+    public void setHorizontalSpace(int horizontalSpace) {
+        this.horizontalSpace = horizontalSpace;
+    }
+
+    public int getVerticalSpace() {
+        return verticalSpace;
+    }
+
+    public void setVerticalSpace(int verticalSpace) {
+        this.verticalSpace = verticalSpace;
+    }
+
+    public int getHorizontalCount() {
+        return horizontalCount;
+    }
+
+    public void setHorizontalCount(int horizontalCount) {
+        this.horizontalCount = horizontalCount;
     }
 }
