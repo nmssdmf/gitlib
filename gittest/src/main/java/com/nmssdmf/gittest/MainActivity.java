@@ -1,4 +1,4 @@
-package com.nmssdmf.gitlib;
+package com.nmssdmf.gittest;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

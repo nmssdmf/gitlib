@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.nmssdmf.gitlib", appContext.getPackageName());
+        assertEquals("com.nmssdmf.gitlib.test", appContext.getPackageName());
     }
 }
