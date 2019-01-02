@@ -23,6 +23,14 @@ android {
         }
     }
 
+    dataBinding {
+        enabled = true
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
 }
 
 dependencies {
@@ -33,4 +41,8 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //facebook弹簧动画
+    compile 'com.facebook.rebound:rebound:0.3.8'
+    //rxjava
+    implementation "io.reactivex.rxjava2:rxjava:2.2.1"
 }

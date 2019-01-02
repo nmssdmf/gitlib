@@ -19,7 +19,7 @@ public class TagLayoutActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        for (int i = 0; i< 30; i++) {
+        for (int i = 0; i< 400; i++) {
             TextView view = new TextView(this);
             view.setText("Tag " + i);
             view.setBackgroundResource(R.color.colorPrimary);

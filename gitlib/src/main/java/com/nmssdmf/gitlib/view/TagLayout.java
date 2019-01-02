@@ -122,7 +122,7 @@ public class TagLayout extends LinearLayout {
                 right = left + childW;//如果不是第一个,则需要加上间距
                 if (right + paddingRight > superW) {//超过容器宽度
                     if ((this.lineCount > 0 && line_count + 1 > this.lineCount)
-                            || top + childH + verticalSpace + childH + paddingBottom > superH) {
+                           /* || top + childH + verticalSpace + childH + paddingBottom > superH*/) {//注释掉的代码为高度最大为superH
                         //超过限定行数或者大于group的高度
                         break;
                     } else {//换行添加

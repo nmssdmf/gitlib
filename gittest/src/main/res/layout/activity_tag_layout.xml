@@ -25,12 +25,12 @@
 
 
             <com.nmssdmf.gitlib.view.TagLayout
-                android:id="@+id/tl_irregular"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                app:horizontal_space="3dp"
-                app:vertical_space="3dp"/>
+            android:id="@+id/tl_irregular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:horizontal_space="3dp"
+            app:vertical_space="3dp"/>
 
         </LinearLayout>
 
