@@ -44,7 +44,7 @@ dependencies {
     implementation 'com.facebook.rebound:rebound:0.3.8'
     //rxjava
     implementation 'io.reactivex.rxjava2:rxjava:2.2.1'
-//    api 'com.nmssdmf:gitlib:1.0.0'
+    api 'com.nmssdmf:gitlib:1.0.0'
 }
 
 //解决这个编译提示 Resolved versions for app (26.1.0) and test app (27.1.1) differ.
