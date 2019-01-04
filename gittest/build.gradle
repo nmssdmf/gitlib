@@ -37,3 +37,8 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation project(':gitlib')
 }
+
+//解决这个编译提示 Resolved versions for app (26.1.0) and test app (27.1.1) differ.
+configurations.all {
+    resolutionStrategy.force 'com.android.support:support-annotations:26.1.0'
+}
