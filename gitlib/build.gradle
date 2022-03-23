@@ -1,14 +1,15 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
 //发布/上传JCenter
 apply plugin: 'com.novoda.bintray-release'
 android {
-    compileSdkVersion 26
+    compileSdkVersion rootProject.ext.compileSdkVersion
 
 
 
     defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 26
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
 
@@ -37,7 +38,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
 
 }
@@ -48,6 +49,9 @@ publish {
     publishVersion = '1.0.0' //版本号
     desc = '' //项目描述。可空。
     website = 'https://github.com/nmssdmf/gitlib' //项目地址，一般填github地址。可空。
+}
+repositories {
+    mavenCentral()
 }
 
 

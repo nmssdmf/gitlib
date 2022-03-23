@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.nmssdmf.test.activity.TagLayoutActivity">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        <LinearLayout
+        <com.nmssdmf.gitlib.view.TagLayout
+            android:id="@+id/tl_rule"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <com.nmssdmf.gitlib.view.TagLayout
-                android:id="@+id/tl_rule"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:horizontal_space="3dp"
-                app:vertical_space="3dp"
-                app:horizontal_count="8"/>
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:horizontal_count="6"
+            app:horizontal_space="5dp"
+            app:vertical_space="5dp" />
 
 
-            <com.nmssdmf.gitlib.view.TagLayout
+        <com.nmssdmf.gitlib.view.TagLayout
             android:id="@+id/tl_irregular"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            app:horizontal_space="3dp"
-            app:vertical_space="3dp"/>
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:horizontal_space="5dp"
+            app:vertical_space="5dp" />
 
-        </LinearLayout>
+    </LinearLayout>
 
-    </ScrollView>
+</ScrollView>
 
-</layout>
