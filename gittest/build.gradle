@@ -24,15 +24,19 @@ android {
     viewBinding {
         enabled = true
     }
+    android {
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+    }
 }
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation "androidx.appcompat:appcompat:${androidx_appcompat}"
     implementation "androidx.constraintlayout:constraintlayout:${androidx_constraintlayout}"
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    implementation "com.google.android.material:material:${google_material}"
     implementation project(':gitlib')
 }
 

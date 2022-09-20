@@ -91,7 +91,8 @@ class TagLayout : LinearLayout {
                 (1) UPSPECIFIED :父容器对于子容器没有任何限制,子容器想要多大就多大.
                 (2) EXACTLY父容器已经为子容器设置了尺寸,子容器应当服从这些边界,不论子容器想要多大的空间.
                 (3) AT_MOST子容器可以是声明大小内的任意大小.
-             */child.measure(MeasureSpec.UNSPECIFIED, MeasureSpec.UNSPECIFIED)
+             */
+            child.measure(MeasureSpec.UNSPECIFIED, MeasureSpec.UNSPECIFIED)
             val rectF = RectF()
             val childW: Int
             val childH = child.measuredHeight

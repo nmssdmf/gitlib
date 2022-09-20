@@ -1,25 +1,26 @@
 package com.nmssdmf.gittest.activity;
 
-import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
 import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.widget.TextView;
 
+import com.nmssdmf.gitlib.view.BaseActivity;
 import com.nmssdmf.gittest.R;
 import com.nmssdmf.gittest.databinding.ActivityTagLayoutBinding;
 
-public class TagLayoutActivity extends AppCompatActivity {
-
-    private ActivityTagLayoutBinding binding;
+public class TagLayoutActivity extends BaseActivity<ActivityTagLayoutBinding> {
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        binding = ActivityTagLayoutBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
-        initView();
+    protected ActivityTagLayoutBinding getContentViewId() {
+        return ActivityTagLayoutBinding.inflate(LayoutInflater.from(this));
     }
 
-    private void initView() {
+    @Override
+    protected void initIntentData() {
+
+    }
+
+    @Override
+    protected void initView() {
         for (int i = 0; i< 50; i++) {
             TextView view = new TextView(this);
             view.setText("Tag " + i);
@@ -38,5 +39,10 @@ public class TagLayoutActivity extends AppCompatActivity {
             view.setBackgroundResource(R.color.colorAccent);
             binding.tlIrregular.addView(view);
         }
+    }
+
+    @Override
+    protected void initData() {
+
     }
 }

@@ -22,6 +22,7 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven { url "https://jitpack.io" }
     }
 
     tasks.withType(Javadoc) {
@@ -35,9 +36,9 @@ task clean(type: Delete) {
 }
 
 ext {
-    compileSdkVersion = 31
+    compileSdkVersion = 32
     minSdkVersion = 22
-    targetSdkVersion = 31
+    targetSdkVersion = 32
 }
 
 

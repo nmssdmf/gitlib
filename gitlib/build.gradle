@@ -28,6 +28,10 @@ android {
     lintOptions {
         abortOnError false
     }
+
+    viewBinding {
+        enabled = true
+    }
 }
 
 
@@ -35,11 +39,10 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation "androidx.appcompat:appcompat:${androidx_appcompat}"
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
+    implementation 'com.github.JessYanCoding:AndroidAutoSize:v1.2.1'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
 
 }
 publish {
