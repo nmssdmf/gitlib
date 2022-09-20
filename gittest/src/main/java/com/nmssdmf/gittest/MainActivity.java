@@ -33,6 +33,8 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
 
     @Override
     protected void initView() {
+        binding.tl.setTitle("列表页");
+        binding.tl.setTitleTextColor(ResUtil.getColor(R.color.colorPrimary));
         binding.rv.setLayoutManager(new LinearLayoutManager(activity));
     }
 

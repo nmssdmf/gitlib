@@ -20,12 +20,15 @@ public abstract class BaseActivity<T extends ViewBinding> extends AppCompatActiv
         binding = getContentViewId();
         setContentView(binding.getRoot());
 
-
         initIntentData();
         initView();
         initData();
     }
 
+    /**
+     * 获取binding
+     * @return
+     */
     protected abstract T getContentViewId();
 
     /**
