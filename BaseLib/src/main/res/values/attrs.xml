@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitleBar">
+        <attr name="titleBarMode" format="enum">
+            <enum name="title" value="0" />
+            <enum name="search" value="1" />
+        </attr>
+        <attr name="titleBarTitle" format="string" />
+        <attr name="titleBarTitleColor" format="color" />
+        <attr name="titleBarNavigation" format="reference"/>
+        <attr name="titleBarBgTransparent" format="boolean"/>
+        <attr name="titleBarMenuTextColor" format="color"/>
+    </declare-styleable>
+</resources>

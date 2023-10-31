@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="FullScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+
+
+    <!-- 白背景白标题黑返回黑菜单文字 -->
+    <style name="style_title_bar_default" >
+        <item name="android:layout_height">@dimen/title_bar_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/title_bar_bg_color</item>
+        <item name="titleBarTitleColor">#000000</item>
+        <item name="titleBarNavigation">@drawable/ic_title_bar_back_black</item>
+        <item name="titleBarMenuTextColor">#000000</item>
+        <item name="titleBarMode">title</item>
+    </style>
+
+
+</resources>

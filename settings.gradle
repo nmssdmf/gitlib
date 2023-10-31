@@ -1,1 +1,4 @@
-include ':util'
+include ':Util'
+include ':Test'
+include ':BaseLib'
+include ':ThirdLib'

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/llRoot"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+            android:id="@+id/vStatus"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_10"/>
+
+        <com.nmssdmf.base.view.TitleBar
+            android:id="@+id/titleBar"
+            style="@style/style_title_bar_default"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

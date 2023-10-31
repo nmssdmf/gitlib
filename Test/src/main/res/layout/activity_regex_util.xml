@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".util.activity.RegexUtilActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_50"
+        android:hint="邮箱"
+        android:gravity="center"
+        />
+
+    <Button
+        style="@style/btn"
+        android:text="验证"/>
+
+
+</LinearLayout>

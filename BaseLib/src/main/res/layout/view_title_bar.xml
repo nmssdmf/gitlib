@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--顶部导航栏-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    tool:parentTag="androidx.appcompat.widget.Toolbar">
+
+    <ImageView
+        android:id="@+id/tbIvNavigation"
+        android:layout_width="@dimen/qb_px_30"
+        android:layout_height="@dimen/qb_px_30"
+        tool:src="@drawable/ic_title_bar_back_white"
+        android:layout_gravity="center_vertical|left"
+        android:padding="@dimen/qb_px_5"
+        android:layout_marginStart="@dimen/qb_px_7"
+        android:layout_marginEnd="@dimen/qb_px_4"/>
+
+    <TextView
+        android:id="@+id/tbTvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/qb_px_18"
+        android:includeFontPadding="false"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:gravity="center"
+        android:visibility="visible"
+        tool:text="标题"/>
+
+    <LinearLayout
+        android:id="@+id/tbLlMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/qb_px_0"
+        android:orientation="horizontal"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginEnd="@dimen/qb_px_6"
+        android:layout_marginStart="@dimen/qb_px_7"/>
+
+    <LinearLayout
+        android:id="@+id/tbLlEdit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_36"
+        android:background="@drawable/shape_title_bar_et_bg"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/tbEt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="搜索关键词"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColorHint="#ff999999"
+            android:layout_weight="1"
+            android:textSize="@dimen/qb_px_15"
+            android:paddingLeft="@dimen/qb_px_10"
+            android:gravity="center_vertical"
+            android:focusableInTouchMode="true"
+            android:imeActionLabel="搜索"
+            android:imeOptions="actionSearch"
+            />
+
+        <ImageView
+            android:id="@+id/tbIvClose"
+            android:layout_width="@dimen/qb_px_26"
+            android:layout_height="@dimen/qb_px_26"
+            android:src="@drawable/ic_title_bar_close"
+            android:padding="@dimen/qb_px_4"
+            android:visibility="gone"
+            tool:visibility="visible"
+            />
+
+        <ImageView
+            android:id="@+id/tbIvAction"
+            android:layout_width="@dimen/qb_px_26"
+            android:layout_height="@dimen/qb_px_26"
+            tool:src="@drawable/ic_title_bar_close"
+            android:padding="@dimen/qb_px_4"
+            android:visibility="gone"
+            tool:visibility="visible"
+            />
+    </LinearLayout>
+
+</merge>

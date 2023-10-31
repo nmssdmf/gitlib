@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <Button
+        android:id="@+id/btnUtil"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="util"
+        />
+
+    <Button
+        android:id="@+id/btnBaselib"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="baselib"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnPlayerDemo"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="playerDemo"
+        android:layout_marginTop="10dp"
+        />
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PlayDemoActivity">
+
+        <FrameLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_200">
+                <androidx.media3.ui.PlayerView
+                    android:id="@+id/pv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/rlBig"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="@dimen/qb_px_30"
+        android:layout_height="@dimen/qb_px_30"
+        android:layout_marginStart="@dimen/qb_px_15"
+        android:layout_marginTop="@dimen/qb_px_15"
+        android:src="@mipmap/ic_close"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/ivSoundOff"
+        android:layout_width="@dimen/qb_px_30"
+        android:layout_height="@dimen/qb_px_30"
+        android:layout_alignEnd="@+id/rl"
+        android:layout_alignBottom="@+id/rl"
+        android:layout_marginEnd="@dimen/qb_px_10"
+        android:layout_marginBottom="@dimen/qb_px_20"
+        android:src="@mipmap/ic_sound_off" />
+
+
+</RelativeLayout>

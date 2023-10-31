@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".util.activity.StatusBarUtilActivity"
+    tools:ignore="MissingDefaultResource"
+    android:paddingTop="30dp"
+    >
+
+    <Button
+        android:id="@+id/btnSetStatusBarTransparent"
+        style="@style/btn"
+        android:text="设置状态栏透明"/>
+
+    <Button
+        android:id="@+id/btnGetStatusBarHeight"
+        style="@style/btn"
+        android:text="获取状态栏高度"/>
+
+    <Button
+        android:id="@+id/btnHideStatusBar"
+        style="@style/btn"
+        android:text="隐藏状态栏"/>
+
+    <Button
+        android:id="@+id/btnShowStatusBar"
+        style="@style/btn"
+        android:text="显示状态栏"/>
+
+    <Button
+        android:id="@+id/btnSetStatusBarTextColorWhite"
+        style="@style/btn"
+        android:text="设置状态栏文字白色"/>
+
+    <Button
+        android:id="@+id/btnSetStatusBarTextColorBlack"
+        style="@style/btn"
+        android:text="设置状态栏文字黑色"/>
+</LinearLayout>

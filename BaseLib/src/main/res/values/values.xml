@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--titlebar-->
+    <item name="title_bar_height" type="dimen">@dimen/qb_px_44</item>
+    <item name="title_bar_bg_color" type="color">#f5f5f5</item>
+    <item name="title_bar_back_icon" type="drawable">@drawable/ic_title_bar_back_white</item>
+    <item name="title_bar_title_text_size" type="dimen">@dimen/qb_px_18</item>
+</resources>
